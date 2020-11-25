@@ -1,0 +1,97 @@
+/* Colors */
+/* #DCDCDD; Gainsboro */
+/* #C5C3C6; Silver */
+/* #46494C; Davys Grey */
+/* #4C5C68; Black Coral */
+/* #1985A1; Blue Munsell */
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto&family=Sedgwick+Ave&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', serif;
+    color: #46494C; /* Davys Grey */
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Comic Neue', sans-serif;
+    /* text-align: center; */
+}
+
+/* Nav Bar Styling */
+#navbar {
+    background: #C5C3C6; /* Silver */
+}
+#navbrand {
+    color: #46494C; /* Davys Grey */
+    background: #C5C3C6; /* Silver */
+    border-bottom: 1px solid #1985A1; /* Blue Munsell */
+}
+#namebrand {
+    color: #1985A1; /* Blue Munsell */
+    background: #C5C3C6; /* Silver */
+}
+.nav-pills .nav-link:not(.active) {
+    color: #46494C; /* Davys Grey */
+    background: #C5C3C6; /* Silver */
+}
+.nav-pills .nav-link.active {
+    color: #DCDCDD; /* Gainsboro */
+    background: #1985A1; /* Blue Munsell */
+}
+.nav-link {
+    background: ORANGE;
+}
+
+.branding {
+    font-family: 'Sedgwick Ave', serif;
+}
+
+.fullsection {
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    background: #DCDCDD; /* Gainsboro */
+    overflow: hidden;
+}
+.fullsection--dark{
+    background: #4C5C68; /* Black Coral */
+    color: #DCDCDD; /* Gainsboro */
+}
+
+/* Container for the project boxes */
+#projectboxesdiv {
+    /* width: 100%; */
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* Styling for each individual project box */
+.projectbox {
+    margin: 2rem;
+    height: 100px;
+
+    border: solid 3px #DCDCDD; /* Gainsboro */
+    border-radius: 5px;
+    
+    background: orange;
+}
+
+#home {
+    text-align: center;
+}
+
+.blue {
+    color: #1985A1; /* Blue Munsell */
+}

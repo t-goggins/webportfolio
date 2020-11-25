@@ -4,16 +4,70 @@
   <!-- Bootstrap 4 Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+
   <title>Document</title>
 
-  <!-- Bootstrap 4 css (must be before other stylesheets in the head) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+  <!-- Bootstrap 4 css (must be 
+    before other stylesheets in the head) -->
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- Offline copy -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+  <!-- Project style sheet -->
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  
+
+<body data-spy="scroll" data-target="#navbar" data-offset="100">
+
+  <!-- Bootstrap 4 NavBar -->
+  <nav id="navbar" class="navbar flex-nowrap fixed-top">
+    <a id="namebrand" class="branding navbar-brand" href="#home">Tom Goggins</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <div id="home" class="fullsection">
+    <h1 class="branding">Hello! I'm <span class="blue">Tom</span>.</h1>
+    <h5>I can make websites.</h5>
+  </div>
+  <div id="projects" class="fullsection fullsection--dark">
+    <div class="container">
+      <h4 class="row">Projects</h4>
+      <div id="projectboxesdiv" class="row">
+        <div id="project1" class="col-md-3 projectbox"></div>
+        <div id="project2" class="col-md-3 projectbox"></div>
+        <div id="project3" class="col-md-3 projectbox"></div>
+      </div>
+    </div>
+  </div>
+  <div id="about" class="fullsection">
+    <div class="container">
+      <h4>About Me</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate modi sunt nostrum, voluptatibus molestias velit veritatis, sit repellat, voluptas hic corrupti consequuntur doloremque aspernatur quam laudantium sint harum doloribus? Ab ad in accusamus, amet quod placeat eius soluta iusto?</p>
+    </div>
+  </div>
+  <div id="contact" class="fullsection fullsection--dark">
+    <div class="container">
+      <h4>Contact</h4>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur culpa eligendi temporibus modi odio doloremque aliquid distinctio, magni ducimus, saepe sequi sapiente explicabo velit. Totam iste nulla sit est similique reiciendis sequi harum praesentium voluptates? Animi ad delectus reiciendis non, vitae, dolores similique facere sed ex nulla nobis eveniet esse!</p>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS CDN -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+  <!-- Offline Bootstrap JS bundle -->
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
