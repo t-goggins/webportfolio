@@ -36,32 +36,63 @@
     </ul>
   </nav>
 
-  <div id="home" class="fullsection">
+  <section id="home" class="fullsection">
     <h1 class="branding">Hello! I'm <span class="blue">Tom</span>.</h1>
     <h5>I can make websites.</h5>
-  </div>
-  <div id="projects" class="fullsection fullsection--dark">
+  </section>
+
+  <section id="projects" class="fullsection fullsection--dark">
     <div class="container">
-      <h4 class="row">Projects</h4>
-      <div id="projectboxesdiv" class="row">
-        <div id="project1" class="col-md-3 projectbox"></div>
-        <div id="project2" class="col-md-3 projectbox"></div>
-        <div id="project3" class="col-md-3 projectbox"></div>
+      <h4>Current Projects</h4>
+      <div id="projectboxesdiv" class="card-deck">
+        
+        <div id="project1" class="projectbox card text-white">
+          <img src="img/pong_screenshot.jpg" class="card-img" alt="Pong project screenshot">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Pong</h5>
+            <p class="card-text">A simple game written in JavaScript.</p>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn">View Project</a>
+            <a href="#" class="btn">View Code</a>
+          </div>
+        </div>
+
+        <div id="project2" class="projectbox card">
+          <div class="card-body">
+            <img src="img/hours_ss.png" class="card-img-top" alt="Hours calculator project screenshot">
+            <h5 class="card-title">Hours Calculator</h5>
+            <p class="card-text">A brief blurb about project one.</p>
+          </div>
+        </div>
+
+        <div id="project3" class="projectbox card">
+            <img src="img/pong_screenshot.jpg" class="card-img-top" alt="Pong project screenshot">
+            <h5 class="card-title">Pong</h5>
+            <p class="card-text">A simple game written in JavaScript.</p>
+          </div>
+        </div>
+
       </div>
     </div>
-  </div>
-  <div id="about" class="fullsection">
+  </section>
+
+  <section id="about" class="fullsection">
     <div class="container">
       <h4>About Me</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate modi sunt nostrum, voluptatibus molestias velit veritatis, sit repellat, voluptas hic corrupti consequuntur doloremque aspernatur quam laudantium sint harum doloribus? Ab ad in accusamus, amet quod placeat eius soluta iusto?</p>
     </div>
-  </div>
-  <div id="contact" class="fullsection fullsection--dark">
+  </section>
+
+  <section id="contact" class="fullsection fullsection--dark">
     <div class="container">
       <h4>Contact</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur culpa eligendi temporibus modi odio doloremque aliquid distinctio, magni ducimus, saepe sequi sapiente explicabo velit. Totam iste nulla sit est similique reiciendis sequi harum praesentium voluptates? Animi ad delectus reiciendis non, vitae, dolores similique facere sed ex nulla nobis eveniet esse!</p>
+      <img src="img/baseline_email_black_18dp.png" alt="Email logo">
+      <h5>thomas.a.goggins@gmail.com</h5>
+      <img src="img/GitHub-Mark-64px.png" alt="GitHub Logo">
+      <h5>bowtiesofry</h5>
     </div>
-  </div>
+  </section>
 
   <!-- Bootstrap JS CDN -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
