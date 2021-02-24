@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <title>Document</title>
+  <title>Tom Goggins | Web Portfolio</title>
 
   <!-- Bootstrap 4 css (must be 
     before other stylesheets in the head) -->
@@ -16,81 +16,107 @@
     
   <!-- Project style sheet -->
   <link rel="stylesheet" href="css/style.css">
+
+  <!-- favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body data-spy="scroll" data-target="#navbar" data-offset="100">
 
   <!-- Bootstrap 4 NavBar -->
-  <nav id="navbar" class="navbar flex-nowrap fixed-top">
-    <a id="namebrand" class="branding navbar-brand" href="#home">Tom Goggins</a>
-    <ul class="nav nav-pills">
-      <li class="nav-item">
-        <a class="nav-link" href="#projects">Projects</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#about">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
+  <!-- <nav id="navbar" class="navbar navbar-expand-lg flex-nowrap fixed-top navbar-dark bg-dark"> -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a id="namebrand" class="branding navbar-brand" href="/">Tom Goggins</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id=navbarNav>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#projects">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Contact</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 
   <section id="home" class="fullsection">
     <h1 class="branding">Hello! I'm <span class="blue">Tom</span>.</h1>
-    <h5>I can make websites.</h5>
+    <h5>I can make websites</h5>
+    <hr>
+    <button type="button" onclick="window.location.href='#projects'" class="btn btn-primary">Check Out My Work</button>
   </section>
 
   <section id="projects" class="fullsection fullsection--dark">
-    <div class="container">
-      <h4>Current Projects</h4>
-      <div id="projectboxesdiv" class="card-deck">
-        
-        <div id="project1" class="projectbox card text-white">
-          <img src="img/pong_screenshot.jpg" class="card-img" alt="Pong project screenshot">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Pong</h5>
-            <p class="card-text">A simple game written in JavaScript.</p>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn">View Project</a>
-            <a href="#" class="btn">View Code</a>
-          </div>
+    <h2>Current Projects</h2>
+    <div class="row">
+      
+      <div id="project1" class="projectbox col-md-4 card">
+        <div class="card-body">
+          <h3 class="card-title">Breakout JS</h3>
+          <img src="img/pong_screenshot.jpg" class="card-img" alt="Breakout JS screenshot">
+          <p class="card-text">A simple block breaking game written in JavaScript based on the retro Atari videogame.</p>
         </div>
-
-        <div id="project2" class="projectbox card">
-          <div class="card-body">
-            <img src="img/hours_ss.png" class="card-img-top" alt="Hours calculator project screenshot">
-            <h5 class="card-title">Hours Calculator</h5>
-            <p class="card-text">A brief blurb about project one.</p>
-          </div>
+        <div class="card-footer text-center">
+          <a href="#" class="btn btn-primary disabled">View Project</a>
+          <a href="https://github.com/t-goggins/breakout" class="btn btn-primary">View Code</a>
         </div>
+      </div>
 
-        <div id="project3" class="projectbox card">
+      <div id="project2" class="projectbox projectbox--dark col-md-4 card">
+        <div class="card-body">
+          <h3 class="card-title">Hours Calculator</h3>
+          <img src="img/hours_ss.png" class="card-img-top" alt="Hours Calculator screenshot">
+          <p class="card-text">Simple Web app to calculate shifts worked.</p>
+        </div>
+        <div class="card-footer text-center">
+          <a href="https://t-goggins.github.io/hours-tracker/" class="btn btn-primary">View Project</a>
+          <a href="https://github.com/t-goggins/hours-tracker" class="btn btn-primary">View Code</a>
+        </div>
+      </div>
+
+      <div id="project3" class="projectbox col-md-4 card">
+        <div class="card-body">
+          <h3 class="card-title">Tech Blog</h3>
             <img src="img/pong_screenshot.jpg" class="card-img-top" alt="Pong project screenshot">
-            <h5 class="card-title">Pong</h5>
-            <p class="card-text">A simple game written in JavaScript.</p>
-          </div>
+          <p class="card-text">My WordPress blog about anything and everything tech.</p>
         </div>
-
+        <div class="card-footer text-center">
+          <a href="https://t-goggins.github.io/hours-tracker/" class="btn btn-primary">View Project</a>
+          <a href="https://github.com/t-goggins/hours-tracker" class="btn btn-primary">View Code</a>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="about" class="fullsection">
-    <div class="container">
-      <h4>About Me</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi cupiditate modi sunt nostrum, voluptatibus molestias velit veritatis, sit repellat, voluptas hic corrupti consequuntur doloremque aspernatur quam laudantium sint harum doloribus? Ab ad in accusamus, amet quod placeat eius soluta iusto?</p>
+  <section id="about" class="fullsection row">
+    <div class="container col-md-6">
+      <h2>About Me</h2>
+      <p>I'm a foundation level Web Developer with a background in science (Computational Chemistry). My degree gave me a keen eye for detail, analytical skills and love of programming. Working on my own projects I've loved the creativity front-end and UX web design demands. I'm currently working outside of the industry looking gain experience. I have ambitions to use my skillset to progress into a full-stack developer.</p>
     </div>
   </section>
 
   <section id="contact" class="fullsection fullsection--dark">
-    <div class="container">
-      <h4>Contact</h4>
-      <img src="img/baseline_email_black_18dp.png" alt="Email logo">
-      <h5>thomas.a.goggins@gmail.com</h5>
-      <img src="img/GitHub-Mark-64px.png" alt="GitHub Logo">
-      <h5>bowtiesofry</h5>
+    <div class="container col-md-6">
+      <div class="row">
+        <h2 class="col">Contact</h2>
+      </div>
+      <div class="row align-items-center">
+        <a class="col" href="mailto:thomas.a.goggins@gmail.com"><img class="icon" src="img/Email-Icon_256px.png" alt="Email icon"></a>
+        <a class="col-9" href="mailto:thomas.a.goggins@gmail.com"><h5 class="linkheader">thomas.a.goggins@gmail.com</h5></a>
+      </div>
+      <div class="row align-items-center">
+        <a class="col" href="https://github.com/t-goggins"><img class="icon" src="img/GitHub-Mark-64px.png" alt="GitHub Logo"></a>
+        <a class="col-9" href="https://github.com/t-goggins"><h5 class="linkheader">github.com/t-goggins</h5></a>
+      </div>
     </div>
   </section>
 
