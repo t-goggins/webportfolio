@@ -6,96 +6,108 @@
 /* #1985A1; Blue Munsell */
 
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto&family=Sedgwick+Ave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue&family=Roboto&family=Roboto+Mono&family=Sedgwick+Ave&display=swap');
 
 html {
-    scroll-behavior: smooth;
-    font-family: 'Roboto', serif;
-    color: #46494C; /* Davys Grey */
+  scroll-behavior: smooth;
+  color: #46494C; /* Davys Grey */
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Sedgwick Ave', serif;
+body {
+  font-family: 'Comic Neue', cursive;
+}
+
+h1, h2, h3 {
+  font-family: 'Sedgwick Ave', serif;
 }
 
 /* Nav Bar Styling */
 #navbar {
-    background: #46494C; /* Davys Grey */
+  background: #46494C; /* Davys Grey */
+  border-bottom: 4px solid #1985A1; /* Blue Munsell */
 }
 #navbrand {
-    color: #46494C; /* Davys Grey */
-    background: #C5C3C6; /* Silver */
+  color: #46494C; /* Davys Grey */
+  background: #C5C3C6; /* Silver */
 }
 
 #namebrand {
-    color: #C5C3C6; /* Silver */
-}
-
-.branding {
-    font-family: 'Sedgwick Ave', serif;
+  color: #C5C3C6; /* Silver */
+  font-family: 'Sedgwick Ave', serif;
 }
 
 .fullsection {
-    padding: 4rem 2rem;
-    min-height: 100vh;
-    width: 100%;
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  width: 100%;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    justify-content: center;
-    align-items: center;
-    background: #DCDCDD; /* Gainsboro */
-    overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  background: #DCDCDD; /* Gainsboro */
+  overflow: hidden;
 }
 .fullsection--dark {
-    background: #4C5C68; /* Black Coral */
-    color: #DCDCDD; /* Gainsboro */
+  background: #4C5C68; /* Black Coral */
+  color: #DCDCDD; /* Gainsboro */
 }
 
+/* Home */
+#myworkbtn {
+}
+
+/* Projects */
+
 .projectbox {
-    min-height: 60%;
-    max-height: 60vh;
-    background-color: #46494C; /* Davys Grey */
-    color: #DCDCDD; /* Gainsboro */
-    margin-top: 0.5rem;
-    border-radius: 5px;
+  background-color: #46494C; /* Davys Grey */
+  color: #DCDCDD; /* Gainsboro */
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  height: 60vh;
 }
 .projectbox--dark {
-    background-color: #DCDCDD; /* Gainsboro */
-    color: #46494C; /* Davys Grey */
+  background-color: #DCDCDD; /* Gainsboro */
+  color: #46494C; /* Davys Grey */
 }
 
 .projectbox img {
-    height: 60%;
-    object-fit: cover;
-    margin: 0.5rem auto 1rem auto;
+  height: 50%;
+  object-fit: cover;
+  margin: 0.5rem auto 1rem auto;
 }
 
 .btn-primary {
-    background: #46494C; /* Davys Grey */
-    border-radius: 35px;
+  background: #46494C; /* Davys Grey */
+  border-radius: 35px;
+}
+
+.techtag {
+  text-align: right;
+  font-family: 'Roboto mono', monospace;
+  font-size: 0.7rem;
 }
 
 #home {
-    text-align: center;
+  text-align: center;
 }
 
 .blue {
-    color: #1985A1; /* Blue Munsell */
+  color: #1985A1; /* Blue Munsell */
 }
 
 .icon {
-    height: 64px;
-    width: 64px;
+  height: 64px;
+  width: 64px;
 }
 
 .linkheader {
-    font-family: 'Roboto', serif;
-    color: #DCDCDD; /* Gainsboro */
-    margin: 0;
+  font-family: 'Roboto', serif;
+  color: #DCDCDD; /* Gainsboro */
+  margin: 0;
 }
 .linkheader:hover {
-    color: #1985A1; /* Blue Munsell */
-    text-decoration: none;
+  color: #1985A1; /* Blue Munsell */
+  text-decoration: none;
 }

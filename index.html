@@ -49,15 +49,15 @@
   </nav>
 
   <section id="home" class="fullsection">
-    <h1 class="branding">Hello! I'm <span class="blue">Tom</span>.</h1>
+    <h1>Hello! I'm <span class="blue">Tom</span>.</h1>
     <h5>I can make websites</h5>
     <hr>
-    <button type="button" onclick="window.location.href='#projects'" class="btn btn-primary">Check Out My Work</button>
+    <button id="myworkbtn" type="button" onclick="window.location.href='#projects'" class="btn btn-primary">Check Out My Work</button>
   </section>
 
   <section id="projects" class="fullsection fullsection--dark">
     <h2>Current Projects</h2>
-    <div class="row">
+    <div class="row mx-md-5">
       
       <div id="project1" class="projectbox col-md-4 card">
         <div class="card-body">
@@ -75,7 +75,8 @@
         <div class="card-body">
           <h3 class="card-title">Hours Calculator</h3>
           <img src="img/hours_ss.png" class="card-img-top" alt="Hours Calculator screenshot">
-          <p class="card-text">Simple Web app to calculate shifts worked.</p>
+          <p class="card-text">Single page web application used to calculate hours logged on a project.</p>
+          <p class="techtag">JavaScript - HTML5 - Bootstrap4</p>
         </div>
         <div class="card-footer text-center">
           <a href="https://t-goggins.github.io/hours-tracker/" class="btn btn-primary">View Project</a>
@@ -86,7 +87,7 @@
       <div id="project3" class="projectbox col-md-4 card">
         <div class="card-body">
           <h3 class="card-title">Tech Blog</h3>
-            <img src="img/pong_screenshot.jpg" class="card-img-top" alt="Pong project screenshot">
+          <img src="img/pong_screenshot.jpg" class="card-img-top" alt="Pong project screenshot">
           <p class="card-text">My WordPress blog about anything and everything tech.</p>
         </div>
         <div class="card-footer text-center">
